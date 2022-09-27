@@ -1,6 +1,21 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <animes>
-    <anime>Hunter x Hunter</anime>
+    <anime>
+        <nome>Vampire Hunter</nome>
+        <coord codigo=1>[4][4]</coord>
+        <coord codigo=2>[4][5]</coord>
+        <coord codigo=3>[4][6]</coord>
+        <coord codigo=4>[4][7]</coord>
+        <coord codigo=5>[4][8]</coord>
+        <coord codigo=6>[4][9]</coord>
+        <coord codigo=7>[4][10]</coord>
+        <coord codigo=8>[4][11]</coord>
+        <coord codigo=9>[4][12]</coord>
+        <coord codigo=10>[4][13]</coord>
+        <coord codigo=11>[4][14]</coord>
+        <coord codigo=12>[4][15]</coord>
+        <coord codigo=13>[4][16]</coord>
+    </anime>
     <anime>Neon Genesis Evangelion</anime>
     <anime>Bleach</anime>
     <anime>Soul Eater</anime>
