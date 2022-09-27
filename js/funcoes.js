@@ -1,4 +1,5 @@
 matriz = new Array;
+x = 0;
 
 /*16x22 */
 matriz = [
@@ -24,8 +25,16 @@ document.write("<table>");
 for(linha=0; linha<16; linha++){
     document.write("<tr>");
     for(coluna=0; coluna<22; coluna++){
-        document.write("<td align='center'>" + matriz[linha][coluna] + "</td>");
+        x++;
+        document.write("<td id='" + x + "' onclick='funcSelect("+x+")' align='center'>" + matriz[linha][coluna] + "</td>");
     }
     document.write("</tr>");
+    console.log(x);
 }
 document.write("</table>");
+
+function funcSelect(x){
+    document.getElementById(x).style.border = "1px solid #000";
+    console.log(x);
+    console.log("click");
+}
