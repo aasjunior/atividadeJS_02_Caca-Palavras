@@ -1,28 +1,34 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <animes>
     <anime>
-        <nome>Vampire Hunter</nome>
-        <coord codigo=1>[4][4]</coord>
-        <coord codigo=2>[4][5]</coord>
-        <coord codigo=3>[4][6]</coord>
-        <coord codigo=4>[4][7]</coord>
-        <coord codigo=5>[4][8]</coord>
-        <coord codigo=6>[4][9]</coord>
-        <coord codigo=7>[4][10]</coord>
-        <coord codigo=8>[4][11]</coord>
-        <coord codigo=9>[4][12]</coord>
-        <coord codigo=10>[4][13]</coord>
-        <coord codigo=11>[4][14]</coord>
-        <coord codigo=12>[4][15]</coord>
-        <coord codigo=13>[4][16]</coord>
+        <nome>Cowboy Bebop</nome>
+        <coord>11,12,13,14,15,16,17,18,19,20,21</coord>
+        <inicial>11</inicial>
+        <final>21</final>
+        <incremento>1</incremento>
     </anime>
-    <anime>Neon Genesis Evangelion</anime>
-    <anime>Bleach</anime>
-    <anime>Soul Eater</anime>
-    <anime>Monster</anime>
-    <anime>Psycho-Pass</anime>
-    <anime>Nana</anime>
-    <anime>Serial Experiments Lain</anime>
-    <anime>Yu Yu Hakusho</anime>
-    <anime>Berserk</anime>
+    <anime>
+        <nome>Serial Experiments Lain</nome>
+        <coord>24,25,26,27,28,29,30,31,32,33,34,35,36,37,38,39,40,41,44</coord>
+    </anime>
+    <anime>
+        <nome>Hunter X Hunter</nome>
+        <coord>57,78,99,120,141,162,183,204,225,246,267,288,309</coord>
+    </anime>
+    <anime>
+        <nome>Elfen Lied</nome>
+        <coord>268,269,270,271,272,273,274,275,276</coord>
+    </anime>
+    <anime>
+        <nome>Neeon Genesis Evangelion</nome>
+        <coord>332,333,334,335,336,337,338,339,340,341,342,343,344,345,346,347,348,349,350,351,352</coord>
+    </anime>
+    <anime>
+        <nome>Psycho-Pass</nome>
+        <coord>98,119,140,161,182,203,224,245,266,287</coord>
+    </anime>    
+    <anime>
+        <nome>Bleach</nome>
+        <coord>126,149,172,195,218,241</coord>
+    </anime>
 </animes>

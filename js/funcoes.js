@@ -30,7 +30,6 @@ for(linha=0; linha<16; linha++){
         document.write("<td id='" + x + "' class='"+ x +"' onclick='funcSelect("+x+")' align='center' >" + matriz[linha][coluna] + "</td>");
     }
     document.write("</tr>");
-    console.log(x);
 }
 document.write("</table>");
 
@@ -40,7 +39,5 @@ function funcSelect(x){
     letra = document.getElementsByClassName(x)[0].childNodes[0].nodeValue;
     document.getElementById('teste').innerHTML += letra;
     console.log(x);
-    console.log("click");
-    console.log(cont);
     console.log(letra);
 }
