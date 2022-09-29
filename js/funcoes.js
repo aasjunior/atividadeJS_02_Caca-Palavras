@@ -1,6 +1,11 @@
+xmlhttp = new XMLHttpRequest();//Instanciação do objeto 
+xmlhttp.open("GET", "xml/lista_animes.xml", false);
+xmlhttp.send();
+xmlDoc = xmlhttp.responseXML;//Informa que o tipo de arquivo é XML
+let animes = xmlDoc.getElementsByTagName("anime");//let - variavel para conjunto de dados
+
 matriz = new Array;
 x = 0;
-cont = 0;
 
 /*16x22 */
 matriz = [
@@ -30,14 +35,23 @@ for(linha=0; linha<16; linha++){
         document.write("<td id='" + x + "' class='"+ x +"' onclick='funcSelect("+x+")' align='center' >" + matriz[linha][coluna] + "</td>");
     }
     document.write("</tr>");
+    console.log(x);
 }
 document.write("</table>");
 
+
+
 function funcSelect(x){
-    document.getElementById(x).style.border = "1px solid #000";
-    cont++;
+    document.getElementById(x).style.color = "1px solid #000";
     letra = document.getElementsByClassName(x)[0].childNodes[0].nodeValue;
     document.getElementById('teste').innerHTML += letra;
     console.log(x);
     console.log(letra);
+}
+
+function colorirPalavra(){
+    for(i=0; i <= animes.length-1; i++){
+        ini = animes[i].getElementsByTagName('inicial')[0].childNodes[0].nodeValue;
+        console.log(ini);
+    }
 }
