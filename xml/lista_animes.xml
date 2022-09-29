@@ -10,25 +10,57 @@
     <anime>
         <nome>Serial Experiments Lain</nome>
         <coord>24,25,26,27,28,29,30,31,32,33,34,35,36,37,38,39,40,41,44</coord>
+        <inicial>24</inicial>
+        <final>44</final>
+        <incremento>1</incremento>
     </anime>
     <anime>
         <nome>Hunter X Hunter</nome>
         <coord>57,78,99,120,141,162,183,204,225,246,267,288,309</coord>
+        <inicial>57</inicial>
+        <final>309</final>
+        <incremento>21</incremento>
     </anime>
     <anime>
         <nome>Elfen Lied</nome>
         <coord>268,269,270,271,272,273,274,275,276</coord>
+        <inicial>268</inicial>
+        <final>276</final>
+        <incremento>1</incremento>
     </anime>
     <anime>
         <nome>Neeon Genesis Evangelion</nome>
         <coord>332,333,334,335,336,337,338,339,340,341,342,343,344,345,346,347,348,349,350,351,352</coord>
+        <inicial>332</inicial>
+        <final>352</final>
+        <incremento>1</incremento>
     </anime>
     <anime>
         <nome>Psycho-Pass</nome>
         <coord>98,119,140,161,182,203,224,245,266,287</coord>
+        <inicial>98</inicial>
+        <final>287</final>
+        <incremento>21</incremento>
     </anime>    
     <anime>
         <nome>Bleach</nome>
         <coord>126,149,172,195,218,241</coord>
+        <inicial>126</inicial>
+        <final>241</final>
+        <incremento>23</incremento>
+    </anime>
+    <anime>
+        <nome>Berserk</nome>
+        <coord>174,195,216,237,258,279,300</coord>
+        <inicial>174</inicial>
+        <final>300</final>
+        <incremento>21</incremento>
+    </anime>
+    <anime>
+        <nome>Yu Yu Hakusho</nome>
+        <coord>289,290,291,292,293,294,295,296,297,298,299</coord>
+        <inicial>289</inicial>
+        <final>299</final>
+        <incremento>1</incremento>
     </anime>
 </animes>
