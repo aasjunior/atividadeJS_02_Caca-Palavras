@@ -59,19 +59,22 @@ function funcSelect(x){
 function colorirPalavra(){
     for(i=0; i<=cont-1; i++){
         /*
-            parseInt() -> função que converte string para inteiro
-            inicial -> recebe o id da primeira letra da palavra armazenada na tag <inicial></inicial> do xml
-            final -> recebe o id da ultima letra da palavra armazenada na tag <final></final> do xml
-            incremento -> recebe o valor armazenada na tag <incremento></incremento> do xml
+            cont-1 -> 'cont' corresponde a quantidade de indices do vetor 'animes', como o primeiro indice é 0 é necessário decrescentar 1;
+            parseInt() -> função que converte string para inteiro;
+            'inicial' -> recebe o id da primeira letra da palavra armazenada na tag <inicial></inicial> do xml;
+            'final' -> recebe o id da ultima letra da palavra armazenada na tag <final></final> do xml;
+            'incremento' -> recebe o valor armazenada na tag <incremento></incremento> do xml;
         */
         inicial = parseInt(animes[i].getElementsByTagName('inicial')[0].childNodes[0].nodeValue);
         final = parseInt(animes[i].getElementsByTagName('final')[0].childNodes[0].nodeValue);
         incremento = parseInt(animes[i].getElementsByTagName('incremento')[0].childNodes[0].nodeValue);
-        console.log("inicial: " + inicial);
-        console.log("final: " + final);
-        console.log("incremento: " + incremento);
 
         for(z=inicial; z<=final; z=z+incremento){
+            /*
+                'z' recebe valor de 'inicial';
+                enquanto 'z' for menor ou igual o valor de 'final' seleciona a <td> com id igual o valor de 'z' e estiliza com uma borda;
+                a cada interação o valor armazenado em 'z' soma com o valor armazenado em 'incremento';
+            */
             console.log(z);
             document.getElementById(z).style.border = "1px solid #000";
         }
