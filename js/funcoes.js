@@ -75,7 +75,6 @@ function colorirPalavra(){
                 enquanto 'z' for menor ou igual o valor de 'final' seleciona a <td> com id igual o valor de 'z' e estiliza com uma borda;
                 a cada interação o valor armazenado em 'z' soma com o valor armazenado em 'incremento';
             */
-            console.log(z);
             document.getElementById(z).style.border = "1px solid #000";
         }
     }
