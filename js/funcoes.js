@@ -15,11 +15,11 @@ matriz = [
     ['I','S','E','R','I','A','L','E','X','P','E','R','I','M','E','N','T','S','L','A','I','N'],
     ['D','T','M','E','P','B','O','I','T','I','U','O','H','I','H','N','R','D','D','F','T','A'],
     ['N','T','O','V','A','M','P','I','R','E','H','U','N','T','E','R','H','A','A','N','A','C'],
-    ['E','C','N','A','T','H','Y','Y','S','S','N','E','T','N','T','L','I','D','N','A','E','F'],
-    ['M','I','S','G','E','N','D','E','S','T','N','A','E','E','N','H','A','W','A','M','S','A'],
-    ['U','D','T','U','H','R','R','A','E','N','H','N','S','N','T','O','C','R','N','S','A','E'],
-    ['U','T','E','E','O','E','P','R','E','A','I','N','Y','A','A','Y','O','A','R','B','S','D'],
-    ['O','P','R','E','Y','O','X','A','H','C','A','P','A','R','A','S','Y','T','E','O','M','E'],
+    ['E','C','N','A','T','A','Y','Y','S','S','N','E','T','N','T','L','I','D','N','A','E','F'],
+    ['M','I','S','G','N','N','D','E','S','T','N','A','E','E','N','H','A','W','A','M','S','A'],
+    ['U','D','T','E','H','R','R','A','E','N','H','N','S','N','T','O','C','R','N','S','A','E'],
+    ['U','T','T','E','O','E','P','R','E','A','I','N','Y','A','A','Y','O','A','R','B','S','D'],
+    ['O','U','R','E','Y','O','X','A','H','C','A','P','A','R','A','S','Y','T','E','O','M','E'],
     ['N','G','S','V','H','H','S','O','U','L','E','A','T','E','R','S','R','R','T','L','A','A'],
     ['I','Y','W','C','U','H','T','I','I','I','C','E','G','I','T','N','S','K','N','N','B','T'],
     ['K','E','Y','N','B','W','T','Q','T','H','A','A','A','O','O','E','D','E','P','G','E','T'],
@@ -39,7 +39,7 @@ for(linha=0; linha<16; linha++){
             X CORRESPONDE AO ID DE CADA <TD> 
         */
         x++;
-        document.write("<td id='" + x + "' class='"+ x +"' onclick='funcSelect("+x+")' align='center' >" + matriz[linha][coluna] + "</td>");
+        document.write("<td id='" + x + "' align='center' >" + matriz[linha][coluna] + "</td>");
     }
     document.write("</tr>");
 }
@@ -47,14 +47,6 @@ document.write("</table>");
 
 //NO FINAL DO LAÇO DE REPETIÇÃO É CHAMADA A FUNÇÃO DE COLORIR A PALAVRA
 colorirPalavra();
-
-function funcSelect(x){
-    document.getElementById(x).style.border = "1px solid #000";
-    letra = document.getElementsByClassName(x)[0].childNodes[0].nodeValue;
-    document.getElementById('teste').innerHTML += letra;
-    console.log(x);
-    console.log(letra);
-}
 
 function colorirPalavra(){
     for(i=0; i<=cont-1; i++){
@@ -68,6 +60,7 @@ function colorirPalavra(){
         inicial = parseInt(animes[i].getElementsByTagName('inicial')[0].childNodes[0].nodeValue);
         final = parseInt(animes[i].getElementsByTagName('final')[0].childNodes[0].nodeValue);
         incremento = parseInt(animes[i].getElementsByTagName('incremento')[0].childNodes[0].nodeValue);
+        cor = animes[i].getElementsByTagName('cor')[0].childNodes[0].nodeValue;
 
         for(z=inicial; z<=final; z=z+incremento){
             /*
@@ -75,7 +68,7 @@ function colorirPalavra(){
                 enquanto 'z' for menor ou igual o valor de 'final' seleciona a <td> com id igual o valor de 'z' e estiliza com uma borda;
                 a cada interação o valor armazenado em 'z' soma com o valor armazenado em 'incremento';
             */
-            document.getElementById(z).style.border = "1px solid #000";
+            document.getElementById(z).style.background = cor;
         }
     }
 }
