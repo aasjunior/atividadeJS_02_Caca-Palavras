@@ -48,6 +48,7 @@ document.write("</table>");
 //NO FINAL DO LAÇO DE REPETIÇÃO É CHAMADA A FUNÇÃO DE COLORIR A PALAVRA
 colorirPalavra();
 
+
 function colorirPalavra(){
     for(i=0; i<=cont-1; i++){
         /*
@@ -71,4 +72,12 @@ function colorirPalavra(){
             document.getElementById(z).style.background = cor;
         }
     }
+}
+
+function erxibirPalavras(){
+    document.write("<ul>");
+    for(j=0; j<cont; j++){
+        document.write("<li>" + animes[j].getElementsByTagName('nome')[0].childNodes[0].nodeValue + "</li>");
+    }
+    document.write("</ul>");
 }
